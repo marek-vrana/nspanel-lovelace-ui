@@ -780,8 +780,8 @@ class LuiPagesGen(object):
 
         # Switch to page
         if send_page_type:
-            if card.cardType == "cardGrid" and len(card.entities) > 6:
-                card.cardType = "cardGrid2"
+            #if card.cardType == "cardGrid" and len(card.entities) > 6:
+            #    card.cardType = "cardGrid2"
             if card.cardType == "cardGrid1":
                 card.cardType = "cardGrid"
             self.page_type(card.cardType)
