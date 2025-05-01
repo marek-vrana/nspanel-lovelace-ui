@@ -228,6 +228,8 @@ class LovelaceUIPanel:
                 self.render_current_page(requested=True)
             if msg[1] == "buttonPress2":
                 entity_id = msg[2]
+                if entity_id == "":
+                    return
                 btype = msg[3]
                 value = msg[4] if len(msg) > 4 else None
                 if btype == "bExit":
@@ -278,6 +280,8 @@ class LovelaceUIPanel:
                             self.privious_cards.append(self.current_card)
                             self.current_card = self.searchCard(card_iid)
                             self.render_current_page(switchPages=True)
+                    case 'mode-light':
+                        ha_control.handle_buttons(entity_id, btype, value, entity_config=entity_config)
                     case _:
                         ha_control.handle_buttons(entity_id, btype, value)
 

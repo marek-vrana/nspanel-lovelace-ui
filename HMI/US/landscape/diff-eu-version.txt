@@ -336,7 +336,7 @@
 │          Value: 0
 │      
 │  Variable (int32) xc1
-│ @@ -370,145 +336,50 @@
+│ @@ -370,165 +336,50 @@
 │          Scope              : local
 │          Dragging           : 0
 │          Send Component ID  : disabled
@@ -347,6 +347,10 @@
 │ -    Events
 │ -        Touch Press Event
 │ -            tSend.txt="event,buttonPress2,"+entn1.txt+",button"
+│ -            if(entn1.txt=="")
+│ -            {
+│ -                tSend.txt="event,buttonPress2,screensaver,bExit,"+tTmp.txt
+│ -            }
 │ -            //send calc crc
 │ -            btlen tSend.txt,sys0
 │ -            crcrest 1,0xffff // reset CRC
@@ -371,6 +375,10 @@
 │ -    Events
 │ -        Touch Press Event
 │ -            tSend.txt="event,buttonPress2,"+entn2.txt+",button"
+│ -            if(entn2.txt=="")
+│ -            {
+│ -                tSend.txt="event,buttonPress2,screensaver,bExit,"+tTmp.txt
+│ -            }
 │ -            //send calc crc
 │ -            btlen tSend.txt,sys0
 │ -            crcrest 1,0xffff // reset CRC
@@ -395,6 +403,10 @@
 │ -    Events
 │ -        Touch Press Event
 │ -            tSend.txt="event,buttonPress2,"+entn3.txt+",button"
+│ -            if(entn3.txt=="")
+│ -            {
+│ -                tSend.txt="event,buttonPress2,screensaver,bExit,"+tTmp.txt
+│ -            }
 │ -            //send calc crc
 │ -            btlen tSend.txt,sys0
 │ -            crcrest 1,0xffff // reset CRC
@@ -419,6 +431,10 @@
 │ -    Events
 │ -        Touch Press Event
 │ -            tSend.txt="event,buttonPress2,"+entn4.txt+",button"
+│ -            if(entn4.txt=="")
+│ -            {
+│ -                tSend.txt="event,buttonPress2,screensaver,bExit,"+tTmp.txt
+│ -            }
 │ -            //send calc crc
 │ -            btlen tSend.txt,sys0
 │ -            crcrest 1,0xffff // reset CRC
@@ -443,6 +459,10 @@
 │ -    Events
 │ -        Touch Press Event
 │ -            tSend.txt="event,buttonPress2,"+entn5.txt+",button"
+│ -            if(entn5.txt=="")
+│ -            {
+│ -                tSend.txt="event,buttonPress2,screensaver,bExit,"+tTmp.txt
+│ -            }
 │ -            //send calc crc
 │ -            btlen tSend.txt,sys0
 │ -            crcrest 1,0xffff // reset CRC
@@ -482,7 +502,7 @@
 │          Send Component ID  : disabled
 │          Associated Keyboard: none
 │          Text               : PM
-│ @@ -690,15 +561,14 @@
+│ @@ -710,15 +561,14 @@
 │                                          if(tTmp.txt!="")
 │                                          {
 │                                              covx tTmp.txt,defaultFontColor,0,0
@@ -498,7 +518,7 @@
 │                                          if(tAMPM.txt=="")
 │                                          {
 │                                              vis tAMPM,0
-│ @@ -819,44 +689,34 @@
+│ @@ -839,44 +689,34 @@
 │                                          //e6Val
 │                                          spstr strCommand.txt,e6Val.txt,"~",60
 │                                          //f1Icon

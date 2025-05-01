@@ -903,6 +903,10 @@ Text f1Icon
     Events
         Touch Press Event
             tSend.txt="event,buttonPress2,"+entn1.txt+",button"
+            if(entn1.txt=="")
+            {
+                tSend.txt="event,buttonPress2,screensaver,bExit,"+tTmp.txt
+            }
             //send calc crc
             btlen tSend.txt,sys0
             crcrest 1,0xffff // reset CRC
@@ -947,6 +951,10 @@ Text f2Icon
     Events
         Touch Press Event
             tSend.txt="event,buttonPress2,"+entn2.txt+",button"
+            if(entn2.txt=="")
+            {
+                tSend.txt="event,buttonPress2,screensaver,bExit,"+tTmp.txt
+            }
             //send calc crc
             btlen tSend.txt,sys0
             crcrest 1,0xffff // reset CRC
@@ -991,6 +999,10 @@ Text f3Icon
     Events
         Touch Press Event
             tSend.txt="event,buttonPress2,"+entn3.txt+",button"
+            if(entn3.txt=="")
+            {
+                tSend.txt="event,buttonPress2,screensaver,bExit,"+tTmp.txt
+            }
             //send calc crc
             btlen tSend.txt,sys0
             crcrest 1,0xffff // reset CRC
@@ -1035,6 +1047,10 @@ Text f4Icon
     Events
         Touch Press Event
             tSend.txt="event,buttonPress2,"+entn4.txt+",button"
+            if(entn4.txt=="")
+            {
+                tSend.txt="event,buttonPress2,screensaver,bExit,"+tTmp.txt
+            }
             //send calc crc
             btlen tSend.txt,sys0
             crcrest 1,0xffff // reset CRC
@@ -1079,6 +1095,10 @@ Text f5Icon
     Events
         Touch Press Event
             tSend.txt="event,buttonPress2,"+entn5.txt+",button"
+            if(entn5.txt=="")
+            {
+                tSend.txt="event,buttonPress2,screensaver,bExit,"+tTmp.txt
+            }
             //send calc crc
             btlen tSend.txt,sys0
             crcrest 1,0xffff // reset CRC

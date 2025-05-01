@@ -1,4 +1,4 @@
-+++ /dev/fd/62	2024-02-25 11:03:09.634837907 +0000
++++ /dev/fd/62	2024-11-22 20:00:11.734673876 +0000
 +I/n2t-out/Program.s.txt
 ++ HMI/US/portrait/n2t-out/Program.s.txt
 +1 +12,11 @@
@@ -1821,7 +1821,7 @@
 + Value: 0
 +
 +e (int32) xc1
-+145 +324,50 @@
++165 +324,50 @@
 + Scope              : local
 + Dragging           : 0
 + Send Component ID  : disabled
@@ -1832,6 +1832,10 @@
 +nts
 + Touch Press Event
 +     tSend.txt="event,buttonPress2,"+entn1.txt+",button"
++     if(entn1.txt=="")
++     {
++         tSend.txt="event,buttonPress2,screensaver,bExit,"+tTmp.txt
++     }
 +     //send calc crc
 +     btlen tSend.txt,sys0
 +     crcrest 1,0xffff // reset CRC
@@ -1856,6 +1860,10 @@
 +nts
 + Touch Press Event
 +     tSend.txt="event,buttonPress2,"+entn2.txt+",button"
++     if(entn2.txt=="")
++     {
++         tSend.txt="event,buttonPress2,screensaver,bExit,"+tTmp.txt
++     }
 +     //send calc crc
 +     btlen tSend.txt,sys0
 +     crcrest 1,0xffff // reset CRC
@@ -1880,6 +1888,10 @@
 +nts
 + Touch Press Event
 +     tSend.txt="event,buttonPress2,"+entn3.txt+",button"
++     if(entn3.txt=="")
++     {
++         tSend.txt="event,buttonPress2,screensaver,bExit,"+tTmp.txt
++     }
 +     //send calc crc
 +     btlen tSend.txt,sys0
 +     crcrest 1,0xffff // reset CRC
@@ -1904,6 +1916,10 @@
 +nts
 + Touch Press Event
 +     tSend.txt="event,buttonPress2,"+entn4.txt+",button"
++     if(entn4.txt=="")
++     {
++         tSend.txt="event,buttonPress2,screensaver,bExit,"+tTmp.txt
++     }
 +     //send calc crc
 +     btlen tSend.txt,sys0
 +     crcrest 1,0xffff // reset CRC
@@ -1928,6 +1944,10 @@
 +nts
 + Touch Press Event
 +     tSend.txt="event,buttonPress2,"+entn5.txt+",button"
++     if(entn5.txt=="")
++     {
++         tSend.txt="event,buttonPress2,screensaver,bExit,"+tTmp.txt
++     }
 +     //send calc crc
 +     btlen tSend.txt,sys0
 +     crcrest 1,0xffff // reset CRC
